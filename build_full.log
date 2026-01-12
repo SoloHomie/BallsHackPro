@@ -1,0 +1,79 @@
+﻿适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+生成启动时间为 2026/1/1 19:21:27。
+
+节点 1 上的项目“d:\Dev-Cpp\Ash\BallsHackPro.sln”(默认目标)。
+ValidateSolutionConfiguration:
+  正在生成解决方案配置“Debug|x64”。
+项目“d:\Dev-Cpp\Ash\BallsHackPro.sln”(1)正在节点 1 上生成“d:\Dev-Cpp\Ash\Ash.vcxproj”(2) (默认目标)。
+PrepareForBuild:
+  已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+InitializeBuildStatus:
+  正在对“BallsHackPro\x64\Debug\BallsHackPro.tlog\unsuccessfulbuild”执行 Touch 任务。
+QtPrepare:
+   Qt/MSBuild: 3.4.1.0
+QtVars:
+  WHERE /Q cl.exe
+  
+  ==== HostExec: Microsoft.Build.Tasks.Exec
+  WorkingDirectory: d:\Dev-Cpp\Ash\BallsHackPro\x64\Debug\qt\qmake
+  Command: ("C:/Qt/6.9.1/msvc2022_64/bin/qmake" -query) 1> props.txt
+  ("C:/Qt/6.9.1/msvc2022_64/bin/qmake" -query) 1> props.txt
+  == OK ExitCode: 0
+  
+  Reading Qt configuration (C:/Qt/6.9.1/msvc2022_64/bin/qmake)
+  
+  ==== HostExec: Microsoft.Build.Tasks.Exec
+  WorkingDirectory: d:\Dev-Cpp\Ash\BallsHackPro\x64\Debug\qt\qmake
+  Command: ("C:/Qt/6.9.1/msvc2022_64/bin/qmake"  -tp vc -early "CONFIG -= debug release debug_and_release" "CONFIG += debug warn_off"  qtvars.pro) 1> qtvars.log 2>&1
+  ("C:/Qt/6.9.1/msvc2022_64/bin/qmake"  -tp vc -early "CONFIG -= debug release debug_and_release" "CONFIG += debug warn_off"  qtvars.pro) 1> qtvars.log 2>&1
+  == OK ExitCode: 0
+  
+  正在删除文件“d:\Dev-Cpp\Ash\BallsHackPro\x64\Debug\qt\\qtvars.xml”。
+  正在将文件从“d:\Dev-Cpp\Ash\BallsHackPro\x64\Debug\qt\qmake\qtvars.xml”复制到“d:\Dev-Cpp\Ash\BallsHackPro\x64\Debug\qt\qtvars.xml”。
+QtVarsLoad:
+   Qt: 6.9.1
+QtUicSetModified:
+正在跳过目标“QtUicSetModified”，因为所有输出文件相对于输入文件而言都是最新的。
+QtUicSetModified:
+正在跳过目标“QtUicSetModified”，因为所有输出文件相对于输入文件而言都是最新的。
+QtRccFilterSetModified:
+正在跳过目标“QtRccFilterSetModified”，因为它没有输出。
+QtRccFilter:
+正在跳过目标“QtRccFilter”，因为它没有输出。
+QtQmlSetModified:
+正在跳过目标“QtQmlSetModified”，因为它没有输出。
+QtQmlCacheItem:
+正在跳过目标“QtQmlCacheItem”，因为它没有输出。
+QtMocSetModified:
+正在跳过目标“QtMocSetModified”，因为所有输出文件相对于输入文件而言都是最新的。
+QtMocSetModified:
+正在跳过目标“QtMocSetModified”，因为所有输出文件相对于输入文件而言都是最新的。
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\HostX86\x64\CL.exe /c /IBallsHackPro\x64\Debug\qt\moc /IBallsHackPro\x64\Debug\qt\uic /IC:\Qt\6.9.1\msvc2022_64\include /IC:\Qt\6.9.1\msvc2022_64\include\QtWidgets /IC:\Qt\6.9.1\msvc2022_64\include\QtGui /IC:\Qt\6.9.1\msvc2022_64\include\QtNetwork /IC:\Qt\6.9.1\msvc2022_64\include\QtConcurrent /IC:\Qt\6.9.1\msvc2022_64\include\QtCore /I"C:\Qt\6.9.1\msvc2022_64\mkspecs\win32-msvc" /I"d:\Dev-Cpp\Ash\\" /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /MP /Od /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_CONCURRENT_LIB /D QT_CORE_LIB /D _AFXDLL /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /permissive- /Fo"BallsHackPro\x64\Debug\\" /Fd"BallsHackPro\x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:queue -Zc:rvalueCast -Zc:strictStrings -Zc:throwingNew -Zc:__cplusplus -Zc:externConstexpr -utf-8 /Zc:inline- /Zc:inline- MainWindow.cpp
+cl : 命令行  warning D9025: 正在重写“/Zc:inline”(用“/Zc:inline-”) [d:\Dev-Cpp\Ash\Ash.vcxproj]
+  MainWindow.cpp
+d:\Dev-Cpp\Ash\MainWindow.cpp(76,10): error C3878: 语法错误:“id-expression”后出现意外标记“常数” [d:\Dev-Cpp\Ash\Ash.vcxproj]
+d:\Dev-Cpp\Ash\MainWindow.cpp(76,19): error C3878: 语法错误:“statement”后出现意外标记“=” [d:\Dev-Cpp\Ash\Ash.vcxproj]
+d:\Dev-Cpp\Ash\MainWindow.cpp(207,4): error C2059: 语法错误:“)” [d:\Dev-Cpp\Ash\Ash.vcxproj]
+已完成生成项目“d:\Dev-Cpp\Ash\Ash.vcxproj”(默认目标)的操作 - 失败。
+已完成生成项目“d:\Dev-Cpp\Ash\BallsHackPro.sln”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“d:\Dev-Cpp\Ash\BallsHackPro.sln”(默认目标) (1) ->
+“d:\Dev-Cpp\Ash\Ash.vcxproj”(默认目标) (2) ->
+(ClCompile 目标) -> 
+  cl : 命令行  warning D9025: 正在重写“/Zc:inline”(用“/Zc:inline-”) [d:\Dev-Cpp\Ash\Ash.vcxproj]
+
+
+“d:\Dev-Cpp\Ash\BallsHackPro.sln”(默认目标) (1) ->
+“d:\Dev-Cpp\Ash\Ash.vcxproj”(默认目标) (2) ->
+(ClCompile 目标) -> 
+  d:\Dev-Cpp\Ash\MainWindow.cpp(76,10): error C3878: 语法错误:“id-expression”后出现意外标记“常数” [d:\Dev-Cpp\Ash\Ash.vcxproj]
+  d:\Dev-Cpp\Ash\MainWindow.cpp(76,19): error C3878: 语法错误:“statement”后出现意外标记“=” [d:\Dev-Cpp\Ash\Ash.vcxproj]
+  d:\Dev-Cpp\Ash\MainWindow.cpp(207,4): error C2059: 语法错误:“)” [d:\Dev-Cpp\Ash\Ash.vcxproj]
+
+    1 个警告
+    3 个错误
+
+已用时间 00:00:06.11

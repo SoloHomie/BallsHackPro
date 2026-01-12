@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="NetVerHelp">
+      <UniqueIdentifier>{f7c713cb-045a-4a51-86e6-1eb6323a41f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetVerHelp\Model">
+      <UniqueIdentifier>{f4541935-7918-42fd-a998-c382b45138d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetVerHelp\HelpHfile">
+      <UniqueIdentifier>{5500b151-d7a9-4763-a5d0-197f9922ab05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetVerHelp\HelpSfile">
+      <UniqueIdentifier>{26279726-5324-48fb-b345-f4ab9972a753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{148815e9-4518-42cf-a047-86e7a9d89b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory\MemoryHeader">
+      <UniqueIdentifier>{d438802a-710e-44f8-8781-b9211f4cb3e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory\MemorySource">
+      <UniqueIdentifier>{f6db5e96-9ade-4b33-9ba5-66001edf5c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemorySearch">
+      <UniqueIdentifier>{32329f9b-3517-44ef-906f-c15e783bbbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemorySearch\MemorySearchHeader">
+      <UniqueIdentifier>{badeb161-3dec-4e95-87fe-5e437f791a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemorySearch\MemorySearchSource">
+      <UniqueIdentifier>{e81bd934-2761-4841-9da1-c3844af68b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BallsMerge">
+      <UniqueIdentifier>{061172ad-cb13-4f3f-a640-411c5202b36b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BallsMerge\BallsMergeHeader">
+      <UniqueIdentifier>{74769af8-80df-46db-af5e-084515064e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BallsMerge\BallsMergeSource">
+      <UniqueIdentifier>{6c96796a-1ae6-4c69-a6c7-8b420882f5ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVerHelp\HelpHfile\cJSON.c">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVerHelp\HelpSfile\CJsonObject.cpp">
+      <Filter>NetVerHelp\HelpSfile</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVerHelp\HelpSfile\HttpRequestTool.cpp">
+      <Filter>NetVerHelp\HelpSfile</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVerHelp\HelpSfile\Md5.cpp">
+      <Filter>NetVerHelp\HelpSfile</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVerHelp\HelpSfile\NetworkVerHelp.cpp">
+      <Filter>NetVerHelp\HelpSfile</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVerHelp\HelpSfile\OtherHelpTools.cpp">
+      <Filter>NetVerHelp\HelpSfile</Filter>
+    </ClCompile>
+    <ClCompile Include="NetVerHelp\HelpSfile\Rc4.cpp">
+      <Filter>NetVerHelp\HelpSfile</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Memory\MemorySource</Filter>
+    </ClCompile>
+    <ClCompile Include="BallsMerge.cpp">
+      <Filter>BallsMerge\BallsMergeSource</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetVerHelp\HelpHfile\cJSON.h">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\HelpHfile\CJsonObject.hpp">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\HelpHfile\HttpRequestTool.h">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\HelpHfile\Md5.h">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\HelpHfile\NetworkVerHelp.h">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\HelpHfile\OtherHelpTools.h">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\HelpHfile\Rc4.h">
+      <Filter>NetVerHelp\HelpHfile</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\ActiveState.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\ApiRequestArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\BusinessCompleteType.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\BusinessType.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\DisableCardOrAccountType.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\EncryptType.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_accountDetailArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_AccountLoginArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_AccountRegisterArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_BucklePointArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_BuyCardNumArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_BuyGoodsArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_cardDetailArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_CardLoginArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_CreateCardArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_DataBaseArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_DisableCardOrAccountArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_getCalculateArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_getGoodsPriceArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_getRemoteVarArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_getSoftPriceListArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_HeartBeatArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_IniSoftInfoArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_LoginOutArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_OpenRenewAccountArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_OpenRenewCardNumArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_rechCardDetailArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_RechCardRenewCardOrAccountArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_SearchOrderArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_unbundMacArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_UpdOrderFlagArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_UpdPwdArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\In_updRemarkArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\IsPay.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\OpenState.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\OrderState.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_accountDetail.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_bucklePoint.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_BuyCardNum.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_BuyGoods.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_cardDetail.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_CreateCard.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_DataBaseArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_getCalculate.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_getRemoteVar.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_goodsInfo.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_GoodsPrice.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_heartBeat.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_iniGoodsInfo.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_iniSoftInfo.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_Login.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_LoginJurisdiction.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_OpenRenewAccount.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_OpenRenewCardNum.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_rechCardNumDetail.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_SearchOrder.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_softInfo.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_softPrice.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_SoftPriceList.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_unbundMacArgs.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Out_Var.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\PayType.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\PlatformType.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVerHelp\Model\Result.h">
+      <Filter>NetVerHelp\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Memory\MemoryHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="BallsMerge.h">
+      <Filter>BallsMerge\BallsMergeHeader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LogIn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\config.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="C:\Users\33498\Desktop\美工UI\LogIn.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="C:\Users\33498\Desktop\美工UI\MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

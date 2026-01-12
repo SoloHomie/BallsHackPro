@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8C37F966-148E-40F2-80E6-132222EB1295}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <ProjectName>BallsHackPro</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.9.1_msvc2022_64</QtInstall>
+    <QtModules>core;gui;network;widgets;concurrent</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+    <QtMocOptions>-DQ_CC_MSVC</QtMocOptions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.9.1_msvc2022_64</QtInstall>
+    <QtModules>core;gui;network;widgets;concurrent</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+    <QtMocOptions>-DQ_CC_MSVC</QtMocOptions>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+    <IncludePath>D:\Dev-Cpp\Ash\BallsHackPro\x64\Debug\qt\uic;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <EnableModules>false</EnableModules>
+      <PreprocessorDefinitions>_AFXDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/Zc:inline- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_AFXDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:inline- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalOptions>/Zc:inline- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BallsMerge.cpp" />
+    <ClCompile Include="LogIn.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="NetVerHelp\HelpHfile\cJSON.c" />
+    <ClCompile Include="NetVerHelp\HelpSfile\CJsonObject.cpp" />
+    <ClCompile Include="NetVerHelp\HelpSfile\HttpRequestTool.cpp" />
+    <ClCompile Include="NetVerHelp\HelpSfile\Md5.cpp" />
+    <ClCompile Include="NetVerHelp\HelpSfile\NetworkVerHelp.cpp" />
+    <ClCompile Include="NetVerHelp\HelpSfile\OtherHelpTools.cpp" />
+    <ClCompile Include="NetVerHelp\HelpSfile\Rc4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BallsMerge.h" />
+    <ClInclude Include="NetVerHelp\HelpHfile\cJSON.h" />
+    <ClInclude Include="NetVerHelp\HelpHfile\CJsonObject.hpp" />
+    <ClInclude Include="NetVerHelp\HelpHfile\HttpRequestTool.h" />
+    <ClInclude Include="NetVerHelp\HelpHfile\Md5.h" />
+    <ClInclude Include="NetVerHelp\HelpHfile\NetworkVerHelp.h" />
+    <ClInclude Include="NetVerHelp\HelpHfile\OtherHelpTools.h" />
+    <ClInclude Include="NetVerHelp\HelpHfile\Rc4.h" />
+    <ClInclude Include="NetVerHelp\Model\ActiveState.h" />
+    <ClInclude Include="NetVerHelp\Model\ApiRequestArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\BusinessCompleteType.h" />
+    <ClInclude Include="NetVerHelp\Model\BusinessType.h" />
+    <ClInclude Include="NetVerHelp\Model\DisableCardOrAccountType.h" />
+    <ClInclude Include="NetVerHelp\Model\EncryptType.h" />
+    <ClInclude Include="NetVerHelp\Model\In_accountDetailArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_AccountLoginArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_AccountRegisterArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_BucklePointArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_BuyCardNumArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_BuyGoodsArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_cardDetailArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_CardLoginArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_CreateCardArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_DataBaseArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_DisableCardOrAccountArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_getCalculateArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_getGoodsPriceArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_getRemoteVarArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_getSoftPriceListArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_HeartBeatArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_IniSoftInfoArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_LoginOutArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_OpenRenewAccountArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_OpenRenewCardNumArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_rechCardDetailArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_RechCardRenewCardOrAccountArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_SearchOrderArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_unbundMacArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_UpdOrderFlagArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_UpdPwdArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\In_updRemarkArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\IsPay.h" />
+    <ClInclude Include="NetVerHelp\Model\OpenState.h" />
+    <ClInclude Include="NetVerHelp\Model\OrderState.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_accountDetail.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_bucklePoint.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_BuyCardNum.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_BuyGoods.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_cardDetail.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_CreateCard.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_DataBaseArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_getCalculate.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_getRemoteVar.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_goodsInfo.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_GoodsPrice.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_heartBeat.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_iniGoodsInfo.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_iniSoftInfo.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_Login.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_LoginJurisdiction.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_OpenRenewAccount.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_OpenRenewCardNum.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_rechCardNumDetail.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_SearchOrder.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_softInfo.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_softPrice.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_SoftPriceList.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_unbundMacArgs.h" />
+    <ClInclude Include="NetVerHelp\Model\Out_Var.h" />
+    <ClInclude Include="NetVerHelp\Model\PayType.h" />
+    <ClInclude Include="NetVerHelp\Model\PlatformType.h" />
+    <ClInclude Include="NetVerHelp\Model\Result.h" />
+    <ClInclude Include="Memory.h" />
+    <QtMoc Include="LogIn.h" />
+    <QtMoc Include="MainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\config.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="C:\Users\33498\Desktop\美工UI\LogIn.ui" />
+    <QtUic Include="C:\Users\33498\Desktop\美工UI\MainWindow.ui" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
